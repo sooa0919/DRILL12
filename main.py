@@ -31,7 +31,7 @@ def reset_world():
     game_world.add_object(boy, 1)
 
 def update_world():
-    pass
+    game_world.update()
 
 def render_world():
     pass
