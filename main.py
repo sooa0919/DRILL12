@@ -34,8 +34,9 @@ def update_world():
     game_world.update()
 
 def render_world():
-    game_world.update()
-    pass
+    clear_canvas()
+    game_world.render()
+    update_canvas()
 
 running = True
 
