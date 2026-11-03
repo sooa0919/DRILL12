@@ -4,6 +4,7 @@ from grass import Grass
 from boy import Boy
 
 import game_world
+import grass
 
 def handle_events():
     global running
@@ -18,7 +19,16 @@ def handle_events():
             boy.handle_event(event)
 
 def reset_world():
-    pass
+    global boy
+
+    grass1 = Grass()
+    game_world.add_object(grass1, 0)
+
+    grass2 = Grass()
+    game_world.add_object(grass2, 0)
+
+    boy = Boy()
+    game_world.add_object(boy, 1)
 
 def update_world():
     pass
